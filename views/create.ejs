@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>CREATE</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CREATE</h1>
+        <form action="/userdata/create-user" method="post">
+            <div class="form-user">
+                <label for="username">USERNAME</label>
+                <input type="text" name="username" id="username">
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password">
+                <button type="submit">CREATE</button>
+            </div>
+        </form>
+        <button type="submit">
+            <a href="http://localhost:8080/userdata" rel="noopener noreferrer">USERS</a>
+        </button>
+    </div>
+</body>
+</html>

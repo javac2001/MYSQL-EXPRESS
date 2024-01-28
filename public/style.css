@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+body{
+    background-color: black;
+    color: aqua;
+}
+h1,h5{
+    text-align: center;
+    margin: 10px;
+    text-decoration: underline;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+.create-user{
+    margin-bottom: 20px;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px;
+    background-color: aqua;
+    color: black;
+    border: 2px solid transparent;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out 0s;
+}
+a:hover{
+    background-color: black;
+    color: aqua;
+    border: 2px solid aqua;
+    border-radius: 10px;
+    font-weight: 1.5rem;
+}
+table{
+    background-color: aqua;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+th, td{
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.form-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+label{
+    font-size: 1rem;
+    margin: 10px;
+    font-weight: 700;
+}
+
+input{
+    height: 2.5rem;
+    width: 15rem;
+    outline: none;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid aqua;
+    color: aqua;
+    padding: 10px;
+    transition: all 0.2s ease-in-out 0s;
+    caret-color: black;
+}
+input:hover{
+    width: 20rem;
+    background-color: aqua;
+    color: black;
+
+}
+.form-user button{
+    color: aqua;
+    background: transparent;
+    height: 5rem;
+    width: 5rem;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid aqua;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out 0s;
+}
+.form-user button:hover{
+    background-color: aqua;
+    color: black;
+    font-weight: 700;
+    height: 3rem;
+    width: 7rem;
+    border-radius: 10px;
+}
+.form-password form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-password button{
+    color: aqua;
+    background: transparent;
+    height: 3rem;
+    width: 7rem;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid aqua;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out 0s;
+}
+.form-password button:hover{
+    background-color: aqua;
+    color: black;
+    font-weight: 700;
+    height: 5rem;
+    width: 5rem;
+}
+.table-container form button{
+    background-color: transparent;
+    transition: all 0.2s ease-in-out 0s;
+}
+.table-container form button:hover{
+    font-size: 1rem;
+    font-weight: 600;
+}

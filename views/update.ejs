@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>UPDATE</title>
+</head>
+<body>
+    <div class="container">
+        <h1>UPDATE</h1>
+        <div class="form-update">
+            <form action="/userdata/<%= user.id %>?_method=PATCH" method="post">
+                <div class="form-user">
+                    <label for="username">PREVIOUS PASSWORD</label>
+                    <input type="password" name="pasword" id="username">
+                    <label for="password">NEW PASSWORD</label>
+                    <input type="password" name="new" id="password">
+                    <button type="submit">CONFIRM</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

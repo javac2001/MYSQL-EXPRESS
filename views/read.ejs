@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>READ</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading-container">
+            <h1>READ</h1>
+            <h5>Total user => <%= usersLength %></h5>
+        </div>
+        <div class="create-user">
+            <button type="submit">
+                <a href="http://localhost:8080/userdata/create-user" rel="noopener noreferrer">CREATE</a>
+            </button>
+        </div>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>USERNAME</th>
+                    <th>EMAIL</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+                
+                <% for (const users of result) { %>
+                    <tr>
+                        <td><%= users.id %></td>
+                        <td><%= users.username %></td>
+                        <td><%= users.email %></td>
+                        <td>
+                            <form action="/userdata/update/<%= users.id %>" method="get">
+                                <button type="submit">EDIT</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form action= "/userdata/delete-user/<%= users.id %>" method="get">
+                                <button type="submit">DELETE</button>
+                            </form>
+                        </td>
+                    </tr>
+                <% } %> 
+            </table>
+        </div>
+        
+</body>
+</html>
